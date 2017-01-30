@@ -21,24 +21,49 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
+
+    <!-- Font awesome Start -->
+
+    <!-- UKW LOGOS SET -->
+    <script src="https://use.fortawesome.com/860d66d0.js"></script>
+
+    <!-- UKW SET -->
+    <script src="https://use.fortawesome.com/a8e251d4.js"></script>
+
+    <!-- Font Awesome Original -->
+    <script src="https://use.fontawesome.com/67a82f6ce2.js"></script>
+
+
+
+    <!-- Font awesome End -->
+
+
+
 </head>
 <body>
 <?php $this->beginBody() ?>
 
+<?= Html::hiddenInput('baseUrl',Yii::$app->request->baseUrl, ['id'=>'baseUrl']) ?>
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'Whitegoods Trade Association',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Register My Appliance', 'url' => ['/registermyproduct']],
+
+
+/*        ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
+  */
     ];
+
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
@@ -70,9 +95,8 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; UK Whitegoods <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
 

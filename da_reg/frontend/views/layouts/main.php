@@ -45,6 +45,11 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <?= Html::hiddenInput('baseUrl',Yii::$app->request->baseUrl, ['id'=>'baseUrl']) ?>
+<?= Html::hiddenInput('google_maps_api_key',Yii::$app->params['google_maps_api_key'], ['id'=>'google_maps_api_key']) ?>
+
+
+
+
 <div class="wrap">
     <?php
     NavBar::begin([

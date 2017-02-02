@@ -53,4 +53,24 @@ class RegistermyproductController extends \yii\web\Controller
     }///end of public function actionBrandsearch()
 
 
+
+    /////to be deleted
+    public function actionRegister_customer()
+    {
+        $model = new common\models\Customers(['scenario' => 'create']);
+
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+
+        return $this->render('_register_customer', [
+            'model' => $model,
+        ]);
+    }
+
+
+
 }

@@ -17,6 +17,7 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/register_my_product.js',
         'js/googleaddresslookup.js',
+        'js/handyfunctions.js',
     ];
 
     public $depends = [

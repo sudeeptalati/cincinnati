@@ -44,9 +44,12 @@ class Customers extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'first_name', 'last_name', 'address_line_1', 'town', 'postcode'], 'required'],
+            [['title', 'first_name', 'last_name', 'address_line_1', 'town', 'postcode', 'email'], 'required'],
             [['lat', 'lng'], 'number'],
             [['notes'], 'string'],
+            [['email'], 'email'],
+            [['email'], 'unique',  'message' => 'This email address already exists. If you have forgotten your password, please reset your password from the login page'],
+
             [['created', 'modified'], 'safe'],
             [['title', 'first_name', 'last_name', 'address_line_1', 'address_line_2', 'address_line_3', 'town', 'county', 'postcode', 'telephone', 'mobile', 'email'], 'string', 'max' => 255],
         ];
@@ -86,4 +89,7 @@ class Customers extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Products::className(), ['customer_id' => 'id']);
     }
+
+
+
 }

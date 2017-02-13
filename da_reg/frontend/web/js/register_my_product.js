@@ -55,10 +55,14 @@ function select_the_brand(id, name, brand_code)
 
     $('#selected_brand').html(icon_html_code.html());
 
+    $('#products-brand_id').val(id);
+
+
+
     ///Now hide the brands and select appliance
 
-    $('#brand_div_box').hide();
-    $('#appliance_div_box').show();
+    $('#brand_div_box').hide("slow");
+    $('#appliance_div_box').show("slow");
     start_appliance_search();
 
 
@@ -126,15 +130,17 @@ function select_the_appliance(id, name, appliance_code)
 
     $('#selected_appliance').html(icon_html_code.html());
 
+    $('#products-appliance_id').val(id);
+
+
     ///Now hide the brands and select appliance
 
-    $('#appliance_div_box').hide();
-    $('#product_div_box').show();
-    $('#customer_div_box').show();
+    $('#appliance_div_box').hide("slow");
+    $('#product_div_box').show("slow");
+    $('#customer_div_box').show("slow");
+    $('#register_button_div_box').show("slow");
 
 
 
 }///end of function select_the_brand(id, name, brand_code)
-
-
 

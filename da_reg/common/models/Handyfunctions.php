@@ -305,12 +305,12 @@ class Handyfunctions extends Model
 
     public static function sendemail($recipient_emails, $subject, $mail_html_content)
     {
-        $from_email = 'mailtest.test10@gmail.com';
+
 
         $plaintext = strip_tags($mail_html_content);
 
         return Yii::$app->mailer->compose()
-            ->setFrom($from_email)
+            ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' '])
             ->setTo($recipient_emails)
             ->setSubject($subject)
             ->setTextBody($plaintext)

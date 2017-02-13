@@ -39,8 +39,8 @@ class Products extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'customer_id', 'brand_id', 'appliance_id', 'modified'], 'required'],
-            [['id', 'customer_id', 'brand_id', 'appliance_id'], 'integer'],
+            [[ 'customer_id', 'brand_id', 'appliance_id','model_number'], 'required'],
+            [['customer_id', 'brand_id', 'appliance_id'], 'integer'],
             [['purchase_date', 'created', 'modified'], 'safe'],
             [['model_number', 'serial_number', 'color', 'seller'], 'string', 'max' => 255],
             [['customer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Customers::className(), 'targetAttribute' => ['customer_id' => 'id']],

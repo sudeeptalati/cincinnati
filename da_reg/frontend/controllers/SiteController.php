@@ -4,14 +4,23 @@ namespace frontend\controllers;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
+use yii\web\NotFoundHttpException;
+
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use common\models\Customers;
+
+
+
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+
+
+
 
 /**
  * Site controller
@@ -72,7 +81,26 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+
+        if (Yii::$app->user->isGuest)
+            return $this->actionLogin();
+
+        $loggedin_user_email = Yii::$app->user->identity->email;
+        $customer_model = $this->findCustomerbyemail($loggedin_user_email);
+
+        if ($customer_model) {
+            return $this->render('index',
+                [
+                'customer_model'=>$customer_model
+                ]);
+        } else {
+            throw new NotFoundHttpException('There is account found with the associated email. Please contact support.');
+        }
+
+
+
+
+
     }
 
     /**
@@ -82,9 +110,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
+
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
@@ -210,4 +236,14 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    protected function findCustomerbyemail($email)
+    {
+        if (($model = Customers::findOne(['email' => $email]) ) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('There is no account found with the logged in user . Please contact support.');
+        }
+    }///end of  protected function findCustomerbyemail($email
 }

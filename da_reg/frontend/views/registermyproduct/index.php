@@ -3,13 +3,10 @@
 
 
 use yii\helpers\Html;
-use common\models\Handyfunctions;
-use common\models\Brands;
+use yii\widgets\ActiveForm;
 
 
 ?>
-
-
 
 
 <h1>
@@ -24,7 +21,6 @@ use common\models\Brands;
                 Register your appliance
             </h1>
         </td>
-
 
 
     </tr>
@@ -57,24 +53,54 @@ use common\models\Brands;
 <br>
 
 
+<div id="customer_product_reg_box">
 
 
+    <?php $form = ActiveForm::begin( ['id' => 'customer_product_registration_form',  'enableAjaxValidation' => true,]); ?>
+
+    <!-- CUSTOMER SECTION -->
+    <div style="display: none;" id="customer_div_box">
+        <?= $this->render('_customer_form_fields', ['customer_model' => $customer_model, 'form' => $form]); ?>
+
+    </div>
 
 
-<div style="display: block;" id="customer_div_box">
+    <!-- PRODUCT SECTION -->
+    <div style="display: none;" id="product_div_box">
+        <?= $this->render('_product_form_fields', ['product_model' => $product_model, 'form' => $form]); ?>
+    </div>
 
 
-        <?=
-        $this->render('_register_customer');
+    <!-- REGISTER BUTTON -->
+    <div style="display: block;" id="register_button_div_box">
 
-        ?>
+        <table class="full_width responsive-stacked-table">
+            <tr>
+                <td style="width: 100%; text-align: center">
+                    <div class="form-group">
+                        <?= Html::submitButton('Register & Sign Up ', ['name' => 'register_and_sign_up', 'class' => 'btn btn-lg btn-success']) ?>
+                    </div>
+                </td>
+                <!--
+                   <td style="width: 50%; text-align: center">
+                    <div class="form-group">
+                        <?= Html::submitButton('Register my appliance', ['name' => 'register_only', 'class' => 'btn btn-lg btn-primary']) ?>
+                    </div>
+                </td>
+
+                <td style="width: 33%; text-align: right">
+                    <div class="form-group">
+                        <?= Html::submitButton('Register & add another appliance', ['name' => 'register_and_add_another_appliance', 'class' => 'btn btn-lg btn-info']) ?>
+                    </div>
+                </td>
+-->
+            </tr>
+        </table>
+    </div><!--  <div id="register_button_div_box">-->
+
+    <?php ActiveForm::end(); ?>
 
 
-</div>
-
-
-
-
-
+</div><!-- <div id="customer_product_reg_box"> -->
 
 

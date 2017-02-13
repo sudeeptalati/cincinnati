@@ -4,6 +4,8 @@ namespace common\models;
 
 use Yii;
 
+use yii\helpers\ArrayHelper;
+
 /**
  * This is the model class for table "appliances".
  *
@@ -59,7 +61,7 @@ class Appliances extends \yii\db\ActiveRecord
     ////Product Type
     public static function get_all_appliances_for_drop_down()
     {
-        return ArrayHelper::map(Producttype::find()->orderBy(['name' => SORT_ASC])->all(), 'id', 'name');
+        return ArrayHelper::map(self::find()->orderBy(['name' => SORT_ASC])->all(), 'id', 'name');
     }//    public function get_all_brands_for_drop_down()
 
     public static function get_appliance_name($product_type_id)

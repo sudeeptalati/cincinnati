@@ -1,17 +1,16 @@
 <?php
-use yii\helpers\Html;
+use common\models\Appliances;
+use common\models\Brands;
 use common\models\Products;
-use \common\models\Brands;
-use \common\models\Appliances;
+use yii\helpers\Html;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 
 $this->title = 'WTA My Appliance';
-$new_product_model=new Products();
+$new_product_model = new Products();
 ?>
 <div class="site-index">
-
-
 
 
     <table class="full_width ">
@@ -87,16 +86,37 @@ $new_product_model=new Products();
 
 
                 <div id="add_new_product_div" style="display: none">
-                    <?=  $this->render('/registermyproduct/createproduct', ['customer_model' => $customer_model, 'product_model'=>$new_product_model]); ?>
+                    <?= $this->render('/registermyproduct/createproduct', ['customer_model' => $customer_model, 'product_model' => $new_product_model]); ?>
                 </div>
-
-
 
 
             </td>
 
         </tr>
     </table>
+
+
+    <div style="    float: right;    position: fixed;top: 60px;right: 10px;">
+
+        <?php $health_check_url= Url::to(['site/findappliancehealthcheckengineer']); ?>
+        <a  href='<?= $health_check_url; ?>' target="_blank" style="float:left;" class='btn btn-success'>
+            <table>
+                <tr>
+                    <td>
+                        Get your Appliance<br> Health Checked
+                    </td>
+
+                    <td>
+                        &nbsp;&nbsp;<i class="fa fa-ambulance fa-4x  fa-flip-horizontal" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+            </table>
+        </a>
+
+    </div>
+
+
     <div id="customer_edit_box" style="display: none;">
 
         <?= $this->render('/registermyproduct/updatecustomer', ['customer_model' => $customer_model]); ?>
@@ -151,40 +171,30 @@ $new_product_model=new Products();
                         </td>
 
 
-
-
-
                         <td><?= $customer_product_model->seller; ?></td>
 
 
                         <td>
 
-                            <?php $product_edit_box_id=$customer_product_model->id.'_product_edit_box'; ?>
+                            <?php $product_edit_box_id = $customer_product_model->id . '_product_edit_box'; ?>
 
                             <!--
-                            <?= Html::button('<i class="fa fa-pencil-square" aria-hidden="true"></i>', ['class' => 'btn btn-primary', 'onclick' => '(function ( $event ) { $("#'.$product_edit_box_id.' ").toggle("slow"); })();']); ?>
+                            <?= Html::button('<i class="fa fa-pencil-square" aria-hidden="true"></i>', ['class' => 'btn btn-primary', 'onclick' => '(function ( $event ) { $("#' . $product_edit_box_id . ' ").toggle("slow"); })();']); ?>
                             -->
 
 
-
-
-                            <?= Html::a( '<i class="fa fa-times" aria-hidden="true"></i>', ['registermyproduct/deleteproduct', 'product_id' => $customer_product_model->id], [
+                            <?= Html::a('<i class="fa fa-times" aria-hidden="true"></i>', ['registermyproduct/deleteproduct', 'product_id' => $customer_product_model->id], [
                                 'class' => 'btn btn-danger',
                                 'data' => [
-                                    'confirm' =>'Are you sure you want to delete this product?',
+                                    'confirm' => 'Are you sure you want to delete this product?',
                                     'method' => 'post',
                                 ],
                             ]) ?>
 
-                            <?= Html::a( '<i class="fa fa-pencil-square" aria-hidden="true"></i>', ['registermyproduct/updateproduct', 'product_id' => $customer_product_model->id], [
+                            <?= Html::a('<i class="fa fa-pencil-square" aria-hidden="true"></i>', ['registermyproduct/updateproduct', 'product_id' => $customer_product_model->id], [
                                 'class' => 'btn btn-primary',
 
                             ]) ?>
-
-
-
-
-
 
 
                         </td>
@@ -193,7 +203,7 @@ $new_product_model=new Products();
                     <tr>
                         <td colspan="6">
 
-                            <div id="<?= $product_edit_box_id; ?>"  style="display: none;">
+                            <div id="<?= $product_edit_box_id; ?>" style="display: none;">
 
                                 <?= $this->render('/registermyproduct/updateproduct', ['product_model' => $customer_product_model]); ?>
                             </div>

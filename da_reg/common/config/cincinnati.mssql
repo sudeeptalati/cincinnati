@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 02, 2017 at 01:38 PM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Generation Time: Feb 16, 2017 at 11:01 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -39,48 +39,47 @@ CREATE TABLE `appliances` (
 -- Dumping data for table `appliances`
 --
 
-INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES
-(1, 'Washing Machine', NULL, 'WASHING_MACHINE', 1, '2017-01-27 15:40:50'),
-(2, 'Washer Dryer', NULL, 'WASHER_DRYER', 1, '2017-01-27 15:40:50'),
-(3, 'Dishwasher', NULL, 'DISHWASHER', 1, '2017-01-27 15:40:50'),
-(4, 'Freezer', NULL, 'FREEZER', 1, '2017-01-27 15:40:50'),
-(5, 'Tumble Dryer (Electric)', NULL, 'TUMBLE_DRYER_ELECTRIC', 1, '2017-01-27 15:40:50'),
-(6, 'Tumble Dryer (Gas)', NULL, 'TUMBLE_DRYER_GAS', 1, '2017-01-27 15:40:50'),
-(7, 'Cooker (Electric Standard)', NULL, 'COOKER_ELECTRIC_STANDARD', 1, '2017-01-27 15:40:50'),
-(8, 'Cooker (Dual Fuel Standard)', NULL, 'COOKER_DUAL_FUEL_STANDARD', 1, '2017-01-27 15:40:50'),
-(9, 'Gas Hob', NULL, 'GAS_HOB', 1, '2017-01-27 15:40:50'),
-(10, 'Electric Hob', NULL, 'ELECTRIC_HOB', 1, '2017-01-27 15:40:50'),
-(11, 'Oven', NULL, 'OVEN', 1, '2017-01-27 15:40:50'),
-(12, 'Microwave', NULL, 'MICROWAVE', 1, '2017-01-27 15:40:50'),
-(13, 'Range Cooker (Gas)', NULL, 'RANGE_COOKER_GAS', 1, '2017-01-27 15:40:50'),
-(14, 'Range Cooker (Electric)', NULL, 'RANGE_COOKER_ELECTRIC', 1, '2017-01-27 15:40:50'),
-(15, 'Cooker Hood', NULL, 'COOKER_HOOD', 1, '2017-01-27 15:40:50'),
-(16, 'Gas Oven', NULL, 'GAS_OVEN', 1, '2017-01-27 15:40:50'),
-(17, 'Waste Disposal', NULL, 'WASTE_DISPOSAL', 1, '2017-01-27 15:40:50'),
-(18, 'Waste Compactor', NULL, 'WASTE_COMPACTOR', 1, '2017-01-27 15:40:50'),
-(19, 'Vacuum Cleaner', NULL, 'VACUUM_CLEANER', 1, '2017-01-27 15:40:50'),
-(20, 'Fridge', NULL, 'FRIDGE', 1, '2017-01-27 15:40:50'),
-(21, 'Fridge Freezer (Standard)', NULL, 'FRIDGE_FREEZER_STANDARD', 1, '2017-01-27 15:40:50'),
-(22, 'Fridge Freezer (American)', NULL, 'FRIDGE_FREEZER_AMERICAN', 1, '2017-01-27 15:40:50'),
-(23, 'Range Cooker (Dual Fuel)', NULL, 'RANGE_COOKER_DUAL_FUEL', 1, '2017-01-27 15:40:50'),
-(24, 'Cooker (Gas Standard)', NULL, 'COOKER_GAS_STANDARD', 1, '2017-01-27 15:40:50'),
-(25, 'Induction Hob', NULL, 'INDUCTION_HOB', 1, '2017-01-27 15:40:50'),
-(26, 'Installation', NULL, 'INSTALLATION', 1, '2017-01-27 15:40:50'),
-(27, 'Coffee Machine', NULL, 'COFFEE_MACHINE_', 1, '2017-01-27 15:40:50'),
-(28, 'Tumble Dryer (Heat Pump)', NULL, 'TUMBLE_DRYER_HEAT_PUMP', 1, '2017-01-27 15:40:50'),
-(29, 'PAT Testing', NULL, 'PAT_TESTING', 1, '2017-01-27 15:40:50'),
-(30, 'Drying Cabinet', NULL, 'DRYING_CABINET', 1, '2017-01-27 15:40:50'),
-(31, 'Not Known', NULL, 'NOT_KNOWN', 1, '2017-01-27 15:40:50'),
-(32, 'Wine Cooler', NULL, 'WINE_COOLER', 1, '2017-01-27 15:40:50'),
-(33, 'Downdraft', NULL, 'DOWNDRAFT', 1, '2017-01-27 15:40:50'),
-(35, 'Warming Drawer', NULL, 'WARMING_DRAWER', 1, '2017-01-27 15:40:50'),
-(36, 'Integrated washer', NULL, 'INTEGRATED_WASHER_', 1, '2017-01-27 15:40:50'),
-(37, 'Integrated fridge', NULL, 'INTEGRATED_FRIDGE_', 1, '2017-01-27 15:40:50'),
-(38, 'integrated fridge freezer', NULL, 'INTEGRATED_FRIDGE_FREEZER_', 1, '2017-01-27 15:40:50'),
-(39, 'Island Hood', NULL, 'ISLAND_HOOD', 1, '2017-01-27 15:40:50'),
-(41, 'Fridge Freezer (Upright)', NULL, 'FRIDGE_FREEZER_UPRIGHT', 1, '2017-01-27 15:40:50'),
-(42, 'Dishdrawer', NULL, 'DISHDRAWER', 1, '2017-01-27 15:40:50'),
-(43, 'Fridge Freezer (Barn Door', NULL, 'FRIDGE_FREEZER_BARN_DOOR', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(1, 'Washing Machine', NULL, 'WASHING_MACHINE', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(2, 'Washer Dryer', NULL, 'WASHER_DRYER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(3, 'Dishwasher', NULL, 'DISHWASHER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(4, 'Freezer', NULL, 'FREEZER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(5, 'Tumble Dryer (Electric)', NULL, 'TUMBLE_DRYER_ELECTRIC', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(6, 'Tumble Dryer (Gas)', NULL, 'TUMBLE_DRYER_GAS', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(7, 'Cooker (Electric Standard)', NULL, 'COOKER_ELECTRIC_STANDARD', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(8, 'Cooker (Dual Fuel Standard)', NULL, 'COOKER_DUAL_FUEL_STANDARD', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(9, 'Gas Hob', NULL, 'GAS_HOB', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(10, 'Electric Hob', NULL, 'ELECTRIC_HOB', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(11, 'Oven', NULL, 'OVEN', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(12, 'Microwave', NULL, 'MICROWAVE', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(13, 'Range Cooker (Gas)', NULL, 'RANGE_COOKER_GAS', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(14, 'Range Cooker (Electric)', NULL, 'RANGE_COOKER_ELECTRIC', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(15, 'Cooker Hood', NULL, 'COOKER_HOOD', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(16, 'Gas Oven', NULL, 'GAS_OVEN', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(17, 'Waste Disposal', NULL, 'WASTE_DISPOSAL', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(18, 'Waste Compactor', NULL, 'WASTE_COMPACTOR', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(19, 'Vacuum Cleaner', NULL, 'VACUUM_CLEANER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(20, 'Fridge', NULL, 'FRIDGE', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(21, 'Fridge Freezer (Standard)', NULL, 'FRIDGE_FREEZER_STANDARD', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(22, 'Fridge Freezer (American)', NULL, 'FRIDGE_FREEZER_AMERICAN', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(23, 'Range Cooker (Dual Fuel)', NULL, 'RANGE_COOKER_DUAL_FUEL', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(24, 'Cooker (Gas Standard)', NULL, 'COOKER_GAS_STANDARD', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(25, 'Induction Hob', NULL, 'INDUCTION_HOB', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(26, 'Installation', NULL, 'INSTALLATION', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(27, 'Coffee Machine', NULL, 'COFFEE_MACHINE_', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(28, 'Tumble Dryer (Heat Pump)', NULL, 'TUMBLE_DRYER_HEAT_PUMP', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(29, 'PAT Testing', NULL, 'PAT_TESTING', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(30, 'Drying Cabinet', NULL, 'DRYING_CABINET', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(31, 'Not Known', NULL, 'NOT_KNOWN', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(32, 'Wine Cooler', NULL, 'WINE_COOLER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(33, 'Downdraft', NULL, 'DOWNDRAFT', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(35, 'Warming Drawer', NULL, 'WARMING_DRAWER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(36, 'Integrated washer', NULL, 'INTEGRATED_WASHER_', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(37, 'Integrated fridge', NULL, 'INTEGRATED_FRIDGE_', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(38, 'integrated fridge freezer', NULL, 'INTEGRATED_FRIDGE_FREEZER_', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(39, 'Island Hood', NULL, 'ISLAND_HOOD', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(41, 'Fridge Freezer (Upright)', NULL, 'FRIDGE_FREEZER_UPRIGHT', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(42, 'Dishdrawer', NULL, 'DISHDRAWER', 1, '2017-01-27 15:40:50');
+INSERT INTO `appliances` (`id`, `name`, `info`, `appliance_code`, `active`, `created`) VALUES(43, 'Fridge Freezer (Barn Door', NULL, 'FRIDGE_FREEZER_BARN_DOOR', 1, '2017-01-27 15:40:50');
 
 -- --------------------------------------------------------
 
@@ -101,205 +100,203 @@ CREATE TABLE `brands` (
 -- Dumping data for table `brands`
 --
 
-INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES
-(1, 'AEG', NULL, 'AEG', 1, '2017-01-27 13:39:06'),
-(2, 'Amica', NULL, 'AMICA', 1, '2017-01-27 13:39:06'),
-(3, 'Apell', NULL, 'APELL', 1, '2017-01-27 13:39:06'),
-(4, 'Ariston', NULL, 'ARISTON', 1, '2017-01-27 13:39:06'),
-(5, 'Arrow', NULL, 'ARROW', 1, '2017-01-27 13:39:06'),
-(6, 'Asko', NULL, 'ASKO', 1, '2017-01-27 13:39:06'),
-(7, 'Atag', NULL, 'ATAG', 1, '2017-01-27 13:39:06'),
-(8, 'Atlant', NULL, 'ATLANT', 1, '2017-01-27 13:39:06'),
-(9, 'Balay', NULL, 'BALAY', 1, '2017-01-27 13:39:06'),
-(10, 'Bauchknecht', NULL, 'BAUCHKNECHT', 1, '2017-01-27 13:39:06'),
-(11, 'Baumatic', NULL, 'BAUMATIC', 1, '2017-01-27 13:39:06'),
-(12, 'Beko', NULL, 'BEKO', 1, '2017-01-27 13:39:06'),
-(13, 'Belling', NULL, 'BELLING', 1, '2017-01-27 13:39:06'),
-(14, 'Bendix', NULL, 'BENDIX', 1, '2017-01-27 13:39:06'),
-(15, 'Bernstein', NULL, 'BERNSTEIN', 1, '2017-01-27 13:39:06'),
-(16, 'Blanco', NULL, 'BLANCO', 1, '2017-01-27 13:39:06'),
-(17, 'Blomberg', NULL, 'BLOMBERG', 1, '2017-01-27 13:39:06'),
-(18, 'Bompani', NULL, 'BOMPANI', 1, '2017-01-27 13:39:06'),
-(19, 'Bosch', NULL, 'BOSCH', 1, '2017-01-27 13:39:06'),
-(20, 'Brandt', NULL, 'BRANDT', 1, '2017-01-27 13:39:06'),
-(21, 'Brittannia', NULL, 'BRITTANNIA', 1, '2017-01-27 13:39:06'),
-(22, 'Bush', NULL, 'BUSH', 1, '2017-01-27 13:39:06'),
-(23, 'Butler', NULL, 'BUTLER', 1, '2017-01-27 13:39:06'),
-(24, 'Candy', NULL, 'CANDY', 1, '2017-01-27 13:39:06'),
-(25, 'Cannon', NULL, 'CANNON', 1, '2017-01-27 13:39:06'),
-(26, 'Caple', NULL, 'CAPLE', 1, '2017-01-27 13:39:06'),
-(27, 'Carlton', NULL, 'CARLTON', 1, '2017-01-27 13:39:06'),
-(28, 'Carron', NULL, 'CARRON', 1, '2017-01-27 13:39:06'),
-(29, 'CATA', NULL, 'CATA', 1, '2017-01-27 13:39:06'),
-(30, 'CDA', NULL, 'CDA', 1, '2017-01-27 13:39:06'),
-(31, 'Continental Domestic Appliances', NULL, 'CONTINENTAL_DOMESTIC_APPLIANCES', 1, '2017-01-27 13:39:06'),
-(32, 'Cookers', NULL, 'COOKERS', 1, '2017-01-27 13:39:06'),
-(33, 'Cookworks', NULL, 'COOKWORKS', 1, '2017-01-27 13:39:06'),
-(34, 'Creda', NULL, 'CREDA', 1, '2017-01-27 13:39:06'),
-(35, 'Crosslee', NULL, 'CROSSLEE', 1, '2017-01-27 13:39:06'),
-(36, 'Crown', NULL, 'CROWN', 1, '2017-01-27 13:39:06'),
-(37, 'Cuisina', NULL, 'CUISINA', 1, '2017-01-27 13:39:06'),
-(38, 'Curry''s Essential', NULL, 'CURRYS_ESSENTIAL', 1, '2017-01-27 13:39:06'),
-(39, 'Daewoo', NULL, 'DAEWOO', 1, '2017-01-27 13:39:06'),
-(40, 'De Dietrich', NULL, 'DE_DIETRICH', 1, '2017-01-27 13:39:06'),
-(41, 'Delonghi', NULL, 'DELONGHI', 1, '2017-01-27 13:39:06'),
-(42, 'Dimplex', NULL, 'DIMPLEX', 1, '2017-01-27 13:39:06'),
-(43, 'Diplomat', NULL, 'DIPLOMAT', 1, '2017-01-27 13:39:06'),
-(44, 'Dyson', NULL, 'DYSON', 1, '2017-01-27 13:39:06'),
-(45, 'Ebac', NULL, 'EBAC', 1, '2017-01-27 13:39:06'),
-(46, 'Elba', NULL, 'ELBA', 1, '2017-01-27 13:39:06'),
-(47, 'Electra', NULL, 'ELECTRA', 1, '2017-01-27 13:39:06'),
-(48, 'Electriq', NULL, 'ELECTRIQ', 1, '2017-01-27 13:39:06'),
-(49, 'Electrolux', NULL, 'ELECTROLUX', 1, '2017-01-27 13:39:06'),
-(50, 'Elica', NULL, 'ELICA', 1, '2017-01-27 13:39:06'),
-(51, 'English Electric', NULL, 'ENGLISH_ELECTRIC', 1, '2017-01-27 13:39:06'),
-(52, 'Esse', NULL, 'ESSE', 1, '2017-01-27 13:39:06'),
-(53, 'Essentials', NULL, 'ESSENTIALS', 1, '2017-01-27 13:39:06'),
-(54, 'Eurolec', NULL, 'EUROLEC', 1, '2017-01-27 13:39:06'),
-(55, 'Eurotec', NULL, 'EUROTEC', 1, '2017-01-27 13:39:06'),
-(56, 'Fagor', NULL, 'FAGOR', 1, '2017-01-27 13:39:06'),
-(57, 'Falcon', NULL, 'FALCON', 1, '2017-01-27 13:39:06'),
-(58, 'Finlandia', NULL, 'FINLANDIA', 1, '2017-01-27 13:39:06'),
-(59, 'Firenzi', NULL, 'FIRENZI', 1, '2017-01-27 13:39:06'),
-(60, 'Fisher & Paykel', NULL, 'FISHERPAYKEL', 1, '2017-01-27 13:39:06'),
-(61, 'Flavel', NULL, 'FLAVEL', 1, '2017-01-27 13:39:06'),
-(62, 'Focalpoint', NULL, 'FOCALPOINT', 1, '2017-01-27 13:39:06'),
-(63, 'Franke', NULL, 'FRANKE', 1, '2017-01-27 13:39:06'),
-(64, 'Fridgemaster', NULL, 'FRIDGEMASTER', 1, '2017-01-27 13:39:06'),
-(65, 'Frigidaire', NULL, 'FRIGIDAIRE', 1, '2017-01-27 13:39:06'),
-(66, 'Gaggenau', NULL, 'GAGGENAU', 1, '2017-01-27 13:39:06'),
-(67, 'General Electric', NULL, 'GENERAL_ELECTRIC', 1, '2017-01-27 13:39:06'),
-(68, 'Glen', NULL, 'GLEN', 1, '2017-01-27 13:39:06'),
-(69, 'Goldstar', NULL, 'GOLDSTAR', 1, '2017-01-27 13:39:06'),
-(70, 'Gorenje', NULL, 'GORENJE', 1, '2017-01-27 13:39:06'),
-(71, 'Grundig', NULL, 'GRUNDIG', 1, '2017-01-27 13:39:06'),
-(72, 'Haier', NULL, 'HAIER', 1, '2017-01-27 13:39:06'),
-(73, 'Hanesatic', NULL, 'HANESATIC', 1, '2017-01-27 13:39:06'),
-(74, 'Haus', NULL, 'HAUS', 1, '2017-01-27 13:39:06'),
-(75, 'HEC', NULL, 'HEC', 1, '2017-01-27 13:39:06'),
-(76, 'Hinari', NULL, 'HINARI', 1, '2017-01-27 13:39:06'),
-(77, 'Hitachi', NULL, 'HITACHI', 1, '2017-01-27 13:39:06'),
-(78, 'Homark', NULL, 'HOMARK', 1, '2017-01-27 13:39:06'),
-(79, 'Homebase', NULL, 'HOMEBASE', 1, '2017-01-27 13:39:06'),
-(80, 'Homebase', NULL, 'HOMEBASE', 1, '2017-01-27 13:39:06'),
-(81, 'Homeking', NULL, 'HOMEKING', 1, '2017-01-27 13:39:06'),
-(82, 'Hoover', NULL, 'HOOVER', 1, '2017-01-27 13:39:06'),
-(83, 'Hotpoint', NULL, 'HOTPOINT', 1, '2017-01-27 13:39:06'),
-(84, 'Howden', NULL, 'HOWDEN', 1, '2017-01-27 13:39:06'),
-(85, 'Huanyi', NULL, 'HUANYI', 1, '2017-01-27 13:39:06'),
-(86, 'Hygena', NULL, 'HYGENA', 1, '2017-01-27 13:39:06'),
-(87, 'Iberna', NULL, 'IBERNA', 1, '2017-01-27 13:39:06'),
-(88, 'Iceking', NULL, 'ICEKING', 1, '2017-01-27 13:39:06'),
-(89, 'Ignis', NULL, 'IGNIS', 1, '2017-01-27 13:39:06'),
-(90, 'IKEA', NULL, 'IKEA', 1, '2017-01-27 13:39:06'),
-(91, 'In Sink Erator', NULL, 'IN_SINK_ERATOR', 1, '2017-01-27 13:39:06'),
-(92, 'Indesit', NULL, 'INDESIT', 1, '2017-01-27 13:39:06'),
-(93, 'ISE', NULL, 'ISE', 1, '2017-01-27 13:39:06'),
-(94, 'ISIS', NULL, 'ISIS', 1, '2017-01-27 13:39:06'),
-(95, 'Jackson', NULL, 'JACKSON', 1, '2017-01-27 13:39:06'),
-(96, 'JMB', NULL, 'JMB', 1, '2017-01-27 13:39:06'),
-(97, 'John Lewis', NULL, 'JOHN_LEWIS', 1, '2017-01-27 13:39:06'),
-(98, 'Kelvinator', NULL, 'KELVINATOR', 1, '2017-01-27 13:39:06'),
-(99, 'Kenwood', NULL, 'KENWOOD', 1, '2017-01-27 13:39:06'),
-(100, 'Kompact', NULL, 'KOMPACT', 1, '2017-01-27 13:39:06'),
-(101, 'Kuppersbusch', NULL, 'KUPPERSBUSCH', 1, '2017-01-27 13:39:06'),
-(102, 'La Canche', NULL, 'LA_CANCHE', 1, '2017-01-27 13:39:06'),
-(103, 'Lamona', NULL, 'LAMONA', 1, '2017-01-27 13:39:06'),
-(104, 'LEC', NULL, 'LEC', 1, '2017-01-27 13:39:06'),
-(105, 'Leisure', NULL, 'LEISURE', 1, '2017-01-27 13:39:06'),
-(106, 'LG', NULL, 'LG', 1, '2017-01-27 13:39:06'),
-(107, 'Liebherr', NULL, 'LIEBHERR', 1, '2017-01-27 13:39:06'),
-(108, 'Lofra', NULL, 'LOFRA', 1, '2017-01-27 13:39:06'),
-(109, 'Logik', NULL, 'LOGIK', 1, '2017-01-27 13:39:06'),
-(110, 'Luxair', NULL, 'LUXAIR', 1, '2017-01-27 13:39:06'),
-(111, 'Luxor', NULL, 'LUXOR', 1, '2017-01-27 13:39:06'),
-(112, 'Luxor', NULL, 'LUXOR', 1, '2017-01-27 13:39:06'),
-(113, 'Matrix', NULL, 'MATRIX', 1, '2017-01-27 13:39:06'),
-(114, 'Matsui', NULL, 'MATSUI', 1, '2017-01-27 13:39:06'),
-(115, 'Maytag', NULL, 'MAYTAG', 1, '2017-01-27 13:39:06'),
-(116, 'Mercury', NULL, 'MERCURY', 1, '2017-01-27 13:39:06'),
-(117, 'MFI', NULL, 'MFI', 1, '2017-01-27 13:39:06'),
-(118, 'Micromarc', NULL, 'MICROMARC', 1, '2017-01-27 13:39:06'),
-(119, 'Micromark', NULL, 'MICROMARK', 1, '2017-01-27 13:39:06'),
-(120, 'Miele', NULL, 'MIELE', 1, '2017-01-27 13:39:06'),
-(121, 'Mitsibushi', NULL, 'MITSIBUSHI', 1, '2017-01-27 13:39:06'),
-(122, 'Moffat', NULL, 'MOFFAT', 1, '2017-01-27 13:39:06'),
-(123, 'Montpellier', NULL, 'MONTPELLIER', 1, '2017-01-27 13:39:06'),
-(124, 'Morphy Richards', NULL, 'MORPHY_RICHARDS', 1, '2017-01-27 13:39:06'),
-(125, 'Naiko', NULL, 'NAIKO', 1, '2017-01-27 13:39:06'),
-(126, 'Nardi', NULL, 'NARDI', 1, '2017-01-27 13:39:06'),
-(127, 'NEB', NULL, 'NEB', 1, '2017-01-27 13:39:06'),
-(128, 'NEC', NULL, 'NEC', 1, '2017-01-27 13:39:06'),
-(129, 'Necht', NULL, 'NECHT', 1, '2017-01-27 13:39:06'),
-(130, 'Neff', NULL, 'NEFF', 1, '2017-01-27 13:39:06'),
-(131, 'NEI', NULL, 'NEI', 1, '2017-01-27 13:39:06'),
-(132, 'NEUE', NULL, 'NEUE', 1, '2017-01-27 13:39:06'),
-(133, 'New World', NULL, 'NEW_WORLD', 1, '2017-01-27 13:39:06'),
-(134, 'Next', NULL, 'NEXT', 1, '2017-01-27 13:39:06'),
-(135, 'Norforst', NULL, 'NORFORST', 1, '2017-01-27 13:39:06'),
-(136, 'Normande', NULL, 'NORMANDE', 1, '2017-01-27 13:39:06'),
-(137, 'Not Known', NULL, 'NOT_KNOWN', 1, '2017-01-27 13:39:06'),
-(138, 'Ocean', NULL, 'OCEAN', 1, '2017-01-27 13:39:06'),
-(139, 'Onyx', NULL, 'ONYX', 1, '2017-01-27 13:39:06'),
-(140, 'PABL', NULL, 'PABL', 1, '2017-01-27 13:39:06'),
-(141, 'Panasonic', NULL, 'PANASONIC', 1, '2017-01-27 13:39:06'),
-(142, 'Parkinson Cowan', NULL, 'PARKINSON_COWAN', 1, '2017-01-27 13:39:06'),
-(143, 'Parnell', NULL, 'PARNELL', 1, '2017-01-27 13:39:06'),
-(144, 'Philco', NULL, 'PHILCO', 1, '2017-01-27 13:39:06'),
-(145, 'Philips', NULL, 'PHILIPS', 1, '2017-01-27 13:39:06'),
-(146, 'Prima', NULL, 'PRIMA', 1, '2017-01-27 13:39:06'),
-(147, 'ProAction', NULL, 'PROACTION', 1, '2017-01-27 13:39:06'),
-(148, 'Prochef', NULL, 'PROCHEF', 1, '2017-01-27 13:39:06'),
-(149, 'Proline', NULL, 'PROLINE', 1, '2017-01-27 13:39:06'),
-(150, 'Rangemaster', NULL, 'RANGEMASTER', 1, '2017-01-27 13:39:06'),
-(151, 'Rosieres', NULL, 'ROSIERES', 1, '2017-01-27 13:39:06'),
-(152, 'Royale', NULL, 'ROYALE', 1, '2017-01-27 13:39:06'),
-(153, 'Russell Hobbs', NULL, 'RUSSELL_HOBBS', 1, '2017-01-27 13:39:06'),
-(154, 'Samsung', NULL, 'SAMSUNG', 1, '2017-01-27 13:39:06'),
-(155, 'Sandstrom', NULL, 'SANDSTROM', 1, '2017-01-27 13:39:06'),
-(156, 'Sansui', NULL, 'SANSUI', 1, '2017-01-27 13:39:06'),
-(157, 'Sanyo', NULL, 'SANYO', 1, '2017-01-27 13:39:06'),
-(158, 'Sarena', NULL, 'SARENA', 1, '2017-01-27 13:39:06'),
-(159, 'Scandinova', NULL, 'SCANDINOVA', 1, '2017-01-27 13:39:06'),
-(160, 'Scholtes', NULL, 'SCHOLTES', 1, '2017-01-27 13:39:06'),
-(161, 'Schreiber', NULL, 'SCHREIBER', 1, '2017-01-27 13:39:06'),
-(162, 'Sebo', NULL, 'SEBO', 1, '2017-01-27 13:39:06'),
-(163, 'Servis', NULL, 'SERVIS', 1, '2017-01-27 13:39:06'),
-(164, 'Sharp', NULL, 'SHARP', 1, '2017-01-27 13:39:06'),
-(165, 'Siemens', NULL, 'SIEMENS', 1, '2017-01-27 13:39:06'),
-(166, 'Smeg', NULL, 'SMEG', 1, '2017-01-27 13:39:06'),
-(167, 'Snowcap', NULL, 'SNOWCAP', 1, '2017-01-27 13:39:06'),
-(168, 'Solavox', NULL, 'SOLAVOX', 1, '2017-01-27 13:39:06'),
-(169, 'Soveriegn', NULL, 'SOVERIEGN', 1, '2017-01-27 13:39:06'),
-(170, 'Statesman', NULL, 'STATESMAN', 1, '2017-01-27 13:39:06'),
-(171, 'Stoves', NULL, 'STOVES', 1, '2017-01-27 13:39:06'),
-(172, 'Swan', NULL, 'SWAN', 1, '2017-01-27 13:39:06'),
-(173, 'TEAC', NULL, 'TEAC', 1, '2017-01-27 13:39:06'),
-(174, 'Teba', NULL, 'TEBA', 1, '2017-01-27 13:39:06'),
-(175, 'Technics', NULL, 'TECHNICS', 1, '2017-01-27 13:39:06'),
-(176, 'Technogas', NULL, 'TECHNOGAS', 1, '2017-01-27 13:39:06'),
-(177, 'Technolec', NULL, 'TECHNOLEC', 1, '2017-01-27 13:39:06'),
-(178, 'Tefal', NULL, 'TEFAL', 1, '2017-01-27 13:39:06'),
-(179, 'Teka', NULL, 'TEKA', 1, '2017-01-27 13:39:06'),
-(180, 'Teknik', NULL, 'TEKNIK', 1, '2017-01-27 13:39:06'),
-(181, 'Terim', NULL, 'TERIM', 1, '2017-01-27 13:39:06'),
-(182, 'Thomson', NULL, 'THOMSON', 1, '2017-01-27 13:39:06'),
-(183, 'Thorn', NULL, 'THORN', 1, '2017-01-27 13:39:06'),
-(184, 'Toshiba', NULL, 'TOSHIBA', 1, '2017-01-27 13:39:06'),
-(185, 'Tricity Bendix', NULL, 'TRICITY_BENDIX', 1, '2017-01-27 13:39:06'),
-(186, 'Tweeny', NULL, 'TWEENY', 1, '2017-01-27 13:39:06'),
-(187, 'Unknown', NULL, 'UNKNOWN', 1, '2017-01-27 13:39:06'),
-(188, 'V-Zug', NULL, 'V-ZUG', 1, '2017-01-27 13:39:06'),
-(189, 'Valor', NULL, 'VALOR', 1, '2017-01-27 13:39:06'),
-(190, 'Vestfrost', NULL, 'VESTFROST', 1, '2017-01-27 13:39:06'),
-(191, 'Viking', NULL, 'VIKING', 1, '2017-01-27 13:39:06'),
-(192, 'Waterline', NULL, 'WATERLINE', 1, '2017-01-27 13:39:06'),
-(193, 'Westinghouse', NULL, 'WESTINGHOUSE', 1, '2017-01-27 13:39:06'),
-(194, 'Whirlpool', NULL, 'WHIRLPOOL', 1, '2017-01-27 13:39:06'),
-(195, 'White Knight', NULL, 'WHITE_KNIGHT', 1, '2017-01-27 13:39:06'),
-(196, 'White Westinghouse', NULL, 'WHITE_WESTINGHOUSE', 1, '2017-01-27 13:39:06'),
-(197, 'Zanussi', NULL, 'ZANUSSI', 1, '2017-01-27 13:39:06'),
-(198, 'Zerowatt', NULL, 'ZEROWATT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(1, 'AEG', NULL, 'AEG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(2, 'Amica', NULL, 'AMICA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(3, 'Apell', NULL, 'APELL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(4, 'Ariston', NULL, 'ARISTON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(5, 'Arrow', NULL, 'ARROW', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(6, 'Asko', NULL, 'ASKO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(7, 'Atag', NULL, 'ATAG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(8, 'Atlant', NULL, 'ATLANT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(9, 'Balay', NULL, 'BALAY', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(10, 'Bauchknecht', NULL, 'BAUCHKNECHT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(11, 'Baumatic', NULL, 'BAUMATIC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(12, 'Beko', NULL, 'BEKO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(13, 'Belling', NULL, 'BELLING', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(14, 'Bendix', NULL, 'BENDIX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(15, 'Bernstein', NULL, 'BERNSTEIN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(16, 'Blanco', NULL, 'BLANCO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(17, 'Blomberg', NULL, 'BLOMBERG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(18, 'Bompani', NULL, 'BOMPANI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(19, 'Bosch', NULL, 'BOSCH', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(20, 'Brandt', NULL, 'BRANDT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(21, 'Brittannia', NULL, 'BRITTANNIA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(22, 'Bush', NULL, 'BUSH', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(23, 'Butler', NULL, 'BUTLER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(24, 'Candy', NULL, 'CANDY', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(25, 'Cannon', NULL, 'CANNON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(26, 'Caple', NULL, 'CAPLE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(27, 'Carlton', NULL, 'CARLTON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(28, 'Carron', NULL, 'CARRON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(29, 'CATA', NULL, 'CATA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(30, 'CDA', NULL, 'CDA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(31, 'Continental Domestic Appliances', NULL, 'CONTINENTAL_DOMESTIC_APPLIANCES', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(32, 'Cookers', NULL, 'COOKERS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(33, 'Cookworks', NULL, 'COOKWORKS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(34, 'Creda', NULL, 'CREDA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(35, 'Crosslee', NULL, 'CROSSLEE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(36, 'Crown', NULL, 'CROWN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(37, 'Cuisina', NULL, 'CUISINA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(38, 'Curry\'s Essential', NULL, 'CURRYS_ESSENTIAL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(39, 'Daewoo', NULL, 'DAEWOO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(40, 'De Dietrich', NULL, 'DE_DIETRICH', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(41, 'Delonghi', NULL, 'DELONGHI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(42, 'Dimplex', NULL, 'DIMPLEX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(43, 'Diplomat', NULL, 'DIPLOMAT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(44, 'Dyson', NULL, 'DYSON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(45, 'Ebac', NULL, 'EBAC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(46, 'Elba', NULL, 'ELBA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(47, 'Electra', NULL, 'ELECTRA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(48, 'Electriq', NULL, 'ELECTRIQ', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(49, 'Electrolux', NULL, 'ELECTROLUX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(50, 'Elica', NULL, 'ELICA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(51, 'English Electric', NULL, 'ENGLISH_ELECTRIC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(52, 'Esse', NULL, 'ESSE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(53, 'Essentials', NULL, 'ESSENTIALS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(54, 'Eurolec', NULL, 'EUROLEC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(55, 'Eurotec', NULL, 'EUROTEC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(56, 'Fagor', NULL, 'FAGOR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(57, 'Falcon', NULL, 'FALCON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(58, 'Finlandia', NULL, 'FINLANDIA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(59, 'Firenzi', NULL, 'FIRENZI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(60, 'Fisher & Paykel', NULL, 'FISHERPAYKEL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(61, 'Flavel', NULL, 'FLAVEL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(62, 'Focalpoint', NULL, 'FOCALPOINT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(63, 'Franke', NULL, 'FRANKE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(64, 'Fridgemaster', NULL, 'FRIDGEMASTER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(65, 'Frigidaire', NULL, 'FRIGIDAIRE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(66, 'Gaggenau', NULL, 'GAGGENAU', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(67, 'General Electric', NULL, 'GENERAL_ELECTRIC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(68, 'Glen', NULL, 'GLEN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(69, 'Goldstar', NULL, 'GOLDSTAR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(70, 'Gorenje', NULL, 'GORENJE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(71, 'Grundig', NULL, 'GRUNDIG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(72, 'Haier', NULL, 'HAIER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(73, 'Hanesatic', NULL, 'HANESATIC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(74, 'Haus', NULL, 'HAUS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(75, 'HEC', NULL, 'HEC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(76, 'Hinari', NULL, 'HINARI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(77, 'Hitachi', NULL, 'HITACHI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(78, 'Homark', NULL, 'HOMARK', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(79, 'Homebase', NULL, 'HOMEBASE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(81, 'Homeking', NULL, 'HOMEKING', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(82, 'Hoover', NULL, 'HOOVER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(83, 'Hotpoint', NULL, 'HOTPOINT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(84, 'Howden', NULL, 'HOWDEN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(85, 'Huanyi', NULL, 'HUANYI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(86, 'Hygena', NULL, 'HYGENA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(87, 'Iberna', NULL, 'IBERNA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(88, 'Iceking', NULL, 'ICEKING', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(89, 'Ignis', NULL, 'IGNIS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(90, 'IKEA', NULL, 'IKEA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(91, 'In Sink Erator', NULL, 'IN_SINK_ERATOR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(92, 'Indesit', NULL, 'INDESIT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(93, 'ISE', NULL, 'ISE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(94, 'ISIS', NULL, 'ISIS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(95, 'Jackson', NULL, 'JACKSON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(96, 'JMB', NULL, 'JMB', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(97, 'John Lewis', NULL, 'JOHN_LEWIS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(98, 'Kelvinator', NULL, 'KELVINATOR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(99, 'Kenwood', NULL, 'KENWOOD', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(100, 'Kompact', NULL, 'KOMPACT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(101, 'Kuppersbusch', NULL, 'KUPPERSBUSCH', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(102, 'La Canche', NULL, 'LA_CANCHE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(103, 'Lamona', NULL, 'LAMONA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(104, 'LEC', NULL, 'LEC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(105, 'Leisure', NULL, 'LEISURE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(106, 'LG', NULL, 'LG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(107, 'Liebherr', NULL, 'LIEBHERR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(108, 'Lofra', NULL, 'LOFRA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(109, 'Logik', NULL, 'LOGIK', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(110, 'Luxair', NULL, 'LUXAIR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(111, 'Luxor', NULL, 'LUXOR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(112, 'Luxor', NULL, 'LUXOR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(113, 'Matrix', NULL, 'MATRIX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(114, 'Matsui', NULL, 'MATSUI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(115, 'Maytag', NULL, 'MAYTAG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(116, 'Mercury', NULL, 'MERCURY', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(117, 'MFI', NULL, 'MFI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(118, 'Micromarc', NULL, 'MICROMARC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(119, 'Micromark', NULL, 'MICROMARK', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(120, 'Miele', NULL, 'MIELE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(121, 'Mitsibushi', NULL, 'MITSIBUSHI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(122, 'Moffat', NULL, 'MOFFAT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(123, 'Montpellier', NULL, 'MONTPELLIER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(124, 'Morphy Richards', NULL, 'MORPHY_RICHARDS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(125, 'Naiko', NULL, 'NAIKO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(126, 'Nardi', NULL, 'NARDI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(127, 'NEB', NULL, 'NEB', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(128, 'NEC', NULL, 'NEC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(129, 'Necht', NULL, 'NECHT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(130, 'Neff', NULL, 'NEFF', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(131, 'NEI', NULL, 'NEI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(132, 'NEUE', NULL, 'NEUE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(133, 'New World', NULL, 'NEW_WORLD', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(134, 'Next', NULL, 'NEXT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(135, 'Norforst', NULL, 'NORFORST', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(136, 'Normande', NULL, 'NORMANDE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(137, 'Not Known', NULL, 'NOT_KNOWN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(138, 'Ocean', NULL, 'OCEAN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(139, 'Onyx', NULL, 'ONYX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(140, 'PABL', NULL, 'PABL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(141, 'Panasonic', NULL, 'PANASONIC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(142, 'Parkinson Cowan', NULL, 'PARKINSON_COWAN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(143, 'Parnell', NULL, 'PARNELL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(144, 'Philco', NULL, 'PHILCO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(145, 'Philips', NULL, 'PHILIPS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(146, 'Prima', NULL, 'PRIMA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(147, 'ProAction', NULL, 'PROACTION', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(148, 'Prochef', NULL, 'PROCHEF', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(149, 'Proline', NULL, 'PROLINE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(150, 'Rangemaster', NULL, 'RANGEMASTER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(151, 'Rosieres', NULL, 'ROSIERES', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(152, 'Royale', NULL, 'ROYALE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(153, 'Russell Hobbs', NULL, 'RUSSELL_HOBBS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(154, 'Samsung', NULL, 'SAMSUNG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(155, 'Sandstrom', NULL, 'SANDSTROM', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(156, 'Sansui', NULL, 'SANSUI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(157, 'Sanyo', NULL, 'SANYO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(158, 'Sarena', NULL, 'SARENA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(159, 'Scandinova', NULL, 'SCANDINOVA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(160, 'Scholtes', NULL, 'SCHOLTES', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(161, 'Schreiber', NULL, 'SCHREIBER', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(162, 'Sebo', NULL, 'SEBO', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(163, 'Servis', NULL, 'SERVIS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(164, 'Sharp', NULL, 'SHARP', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(165, 'Siemens', NULL, 'SIEMENS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(166, 'Smeg', NULL, 'SMEG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(167, 'Snowcap', NULL, 'SNOWCAP', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(168, 'Solavox', NULL, 'SOLAVOX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(169, 'Soveriegn', NULL, 'SOVERIEGN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(170, 'Statesman', NULL, 'STATESMAN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(171, 'Stoves', NULL, 'STOVES', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(172, 'Swan', NULL, 'SWAN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(173, 'TEAC', NULL, 'TEAC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(174, 'Teba', NULL, 'TEBA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(175, 'Technics', NULL, 'TECHNICS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(176, 'Technogas', NULL, 'TECHNOGAS', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(177, 'Technolec', NULL, 'TECHNOLEC', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(178, 'Tefal', NULL, 'TEFAL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(179, 'Teka', NULL, 'TEKA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(180, 'Teknik', NULL, 'TEKNIK', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(181, 'Terim', NULL, 'TERIM', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(182, 'Thomson', NULL, 'THOMSON', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(183, 'Thorn', NULL, 'THORN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(184, 'Toshiba', NULL, 'TOSHIBA', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(185, 'Tricity Bendix', NULL, 'TRICITY_BENDIX', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(186, 'Tweeny', NULL, 'TWEENY', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(187, 'Unknown', NULL, 'UNKNOWN', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(188, 'V-Zug', NULL, 'V-ZUG', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(189, 'Valor', NULL, 'VALOR', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(190, 'Vestfrost', NULL, 'VESTFROST', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(191, 'Viking', NULL, 'VIKING', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(192, 'Waterline', NULL, 'WATERLINE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(193, 'Westinghouse', NULL, 'WESTINGHOUSE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(194, 'Whirlpool', NULL, 'WHIRLPOOL', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(195, 'White Knight', NULL, 'WHITE_KNIGHT', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(196, 'White Westinghouse', NULL, 'WHITE_WESTINGHOUSE', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(197, 'Zanussi', NULL, 'ZANUSSI', 1, '2017-01-27 13:39:06');
+INSERT INTO `brands` (`id`, `name`, `info`, `brand_code`, `active`, `created`) VALUES(198, 'Zerowatt', NULL, 'ZEROWATT', 1, '2017-01-27 13:39:06');
 
 -- --------------------------------------------------------
 
@@ -328,6 +325,35 @@ CREATE TABLE `customers` (
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`id`, `title`, `first_name`, `last_name`, `address_line_1`, `address_line_2`, `address_line_3`, `town`, `county`, `postcode`, `lat`, `lng`, `telephone`, `mobile`, `email`, `notes`, `created`, `modified`) VALUES(1, 'Mr', 'Sudeep', 'Talati', '27', 'Cordon Road', '', 'Kilmarnock', 'East Ayrshire', 'KA3 1PY', 55.6253468, -4.5083752, '07578633632', '892', 'sudeep.talati@gmail.com', '', '2017-02-10 15:01:46', '2017-02-10 15:01:46');
+INSERT INTO `customers` (`id`, `title`, `first_name`, `last_name`, `address_line_1`, `address_line_2`, `address_line_3`, `town`, `county`, `postcode`, `lat`, `lng`, `telephone`, `mobile`, `email`, `notes`, `created`, `modified`) VALUES(2, 'Mr', 'sudeep', 'takat', 'q', '', '', 'Galston', 'East Ayrshire', 'KA4', 55.5801834, -4.3681667, '', '', 'saa', '', '2017-02-10 15:05:24', '2017-02-10 15:05:24');
+INSERT INTO `customers` (`id`, `title`, `first_name`, `last_name`, `address_line_1`, `address_line_2`, `address_line_3`, `town`, `county`, `postcode`, `lat`, `lng`, `telephone`, `mobile`, `email`, `notes`, `created`, `modified`) VALUES(3, 'Mr', 'sudeep', 'takat', 'q', '', '', 'Galston', 'East Ayrshire', 'KA4', 55.5801834, -4.3681667, '', '', 'sudeep.talati@gmail.comee', '', '2017-02-10 15:09:32', '2017-02-10 15:09:32');
+INSERT INTO `customers` (`id`, `title`, `first_name`, `last_name`, `address_line_1`, `address_line_2`, `address_line_3`, `town`, `county`, `postcode`, `lat`, `lng`, `telephone`, `mobile`, `email`, `notes`, `created`, `modified`) VALUES(4, 'Mr', 'James', 'Reid', '27', 'Cordon Road', '', 'Kilmarnock', 'East Ayrshire', 'KA3 1PY', 55.6253468, -4.5083752, '0757863362', '074564', 'sudeep.makku@gmail.com', '', '2017-02-13 10:31:47', '2017-02-13 10:31:47');
+INSERT INTO `customers` (`id`, `title`, `first_name`, `last_name`, `address_line_1`, `address_line_2`, `address_line_3`, `town`, `county`, `postcode`, `lat`, `lng`, `telephone`, `mobile`, `email`, `notes`, `created`, `modified`) VALUES(5, 'Mr', 'Sudeep', 'Talati', '27', 'Cordon Road', '', 'Kilmarnock', 'East Ayrshire', 'KA3 1PY', 55.6253468, -4.5083752, '07578', '', 'sudeep.talati1@gmail.com', 'aadaad', '2017-02-13 10:36:10', '2017-02-13 10:36:10');
+INSERT INTO `customers` (`id`, `title`, `first_name`, `last_name`, `address_line_1`, `address_line_2`, `address_line_3`, `town`, `county`, `postcode`, `lat`, `lng`, `telephone`, `mobile`, `email`, `notes`, `created`, `modified`) VALUES(6, 'Mr', 'kenneth', 'watt', '5', 'Munro Place', '', 'Kilmarnock', 'East Ayrshire', 'KA1 2NP', 55.6137284, -4.5082046, '01563557156', '', 'kwatt@ukwhitegoods.co.uk', '', '2017-02-13 10:48:43', '2017-02-13 10:48:43');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migration`
+--
+
+CREATE TABLE `migration` (
+  `version` varchar(180) NOT NULL,
+  `apply_time` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `migration`
+--
+
+INSERT INTO `migration` (`version`, `apply_time`) VALUES('m000000_000000_base', 1486654447);
+INSERT INTO `migration` (`version`, `apply_time`) VALUES('m130524_201442_init', 1486654454);
+
 -- --------------------------------------------------------
 
 --
@@ -347,6 +373,43 @@ CREATE TABLE `products` (
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `customer_id`, `brand_id`, `appliance_id`, `model_number`, `serial_number`, `color`, `seller`, `purchase_date`, `created`, `modified`) VALUES(16, 1, 154, 7, '12123es', '12123e1313123', 'black', 'asda', '2017-02-01 00:00:00', '2017-02-15 15:17:22', '0000-00-00 00:00:00');
+INSERT INTO `products` (`id`, `customer_id`, `brand_id`, `appliance_id`, `model_number`, `serial_number`, `color`, `seller`, `purchase_date`, `created`, `modified`) VALUES(18, 1, 2, 27, 'ada3', 'asasd', 'a', 'das', '2017-02-03 00:00:00', '2017-02-13 10:29:14', '0000-00-00 00:00:00');
+INSERT INTO `products` (`id`, `customer_id`, `brand_id`, `appliance_id`, `model_number`, `serial_number`, `color`, `seller`, `purchase_date`, `created`, `modified`) VALUES(19, 4, 58, 15, 'Aw23 532dd2222', '12547848748784', 'black', 'ss', '2017-01-31 00:00:00', '2017-02-13 12:20:42', '0000-00-00 00:00:00');
+INSERT INTO `products` (`id`, `customer_id`, `brand_id`, `appliance_id`, `model_number`, `serial_number`, `color`, `seller`, `purchase_date`, `created`, `modified`) VALUES(20, 5, 150, 27, 'sfs', '1121121231232131312312', 'ss', 'ffa', '2017-02-01 00:00:00', '2017-02-13 10:36:10', '0000-00-00 00:00:00');
+INSERT INTO `products` (`id`, `customer_id`, `brand_id`, `appliance_id`, `model_number`, `serial_number`, `color`, `seller`, `purchase_date`, `created`, `modified`) VALUES(21, 6, 166, 8, 'A1.1', '000111666', 'stainless', '', NULL, '2017-02-13 10:48:43', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES(1, 'sudeep.talati@gmail.com', '9UOuUr4gZEk2wrX9y66X83hTXpxUHbRY', '$2y$13$kk89rg.F7Raoecli/eUf8e6jMg0BVyB0fO55X.7OijYmo4eHPgYLW', 'cU_8eTWA7aaHvv8cHB3zhJhrPgMDTCPg_1486739373', 'sudeep.talati@gmail.com', 10, 1486739373, 1486739373);
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES(2, 'sudeep.makku@gmail.com', '791EJFKqevsHNo_Wsfhbv_I02VpXwSEU', '$2y$13$9mbV8jYxjHBwCbZCqMtkU.AAbPUvh4KwK4RhMbv0d5mvJKa1Op9MK', 'KanSDJIkhn3eLSNHzPeaPPBCv3kLD4ON_1486981908', 'sudeep.makku@gmail.com', 10, 1486981908, 1486981908);
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES(3, 'sudeep.talati1@gmail.com', 'rdJmy_wCjueZdnRyE_pKJwGnrIEPSrs7', '$2y$13$b5Dc3pj8G4J5x0emnhBtYe3GKg/vMzYcxVO.Us800zPqPkoeoXF7.', '_RDXwkh7KUa1LK6_EGotCLZkIK8oTaOf_1486982170', 'sudeep.talati1@gmail.com', 10, 1486982170, 1486982170);
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES(4, 'kwatt@ukwhitegoods.co.uk', 'WKLO7e_P6stoX0vO1TPt_UXwrqR9mjFs', '$2y$13$qs4xyW7vnu3SlGY.TDqRjuhwlevRVEjOEXyxrI1wBDpKlDUZxrJwW', 'eTRO4f-Ccyl7QapN-BGUEcewM2hfdQcr_1486982923', 'kwatt@ukwhitegoods.co.uk', 10, 1486982923, 1486982923);
 
 --
 -- Indexes for dumped tables
@@ -371,6 +434,12 @@ ALTER TABLE `customers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `migration`
+--
+ALTER TABLE `migration`
+  ADD PRIMARY KEY (`version`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -378,6 +447,15 @@ ALTER TABLE `products`
   ADD KEY `customer_id` (`customer_id`),
   ADD KEY `brand_id` (`brand_id`),
   ADD KEY `appliance_id` (`appliance_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -392,7 +470,17 @@ ALTER TABLE `appliances`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Constraints for dumped tables
 --
